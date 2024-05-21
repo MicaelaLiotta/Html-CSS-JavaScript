@@ -1,248 +1,804 @@
-body {
-    background-image: url('https://img.freepik.com/vector-gratis/tema-fondo-abstracto-blanco_23-2148830884.jpg?w=2000');
+@media (max-width: 360px) {       /*pantallas pequeños de 360 px de ancho*/
+    body {
+        background-image: url('https://img.freepik.com/vector-gratis/tema-fondo-abstracto-blanco_23-2148830884.jpg?w=2000');
 
-    background-attachment: fixed;
-    background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
 
-    height: 100vh;
-    width: 100%;
-}
-
-.card-title {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-
-
-}
-
-.display-4 {
-    font-size: 30px;
-    font-weight: bold;
-
-}
-
-.lead {
-    font-size: 20px;
-}
-
-.lead-exploracion {
-    font-size: 25px;
-    color: rgb(219, 69, 144);
-}
-
-.centered {
-    text-align: center;
-    margin-top: 20px;
-    /* Ajusta este valor para controlar la distancia desde arriba */
-    color: rgb(106, 90, 205);
-    /* Cambia el color del texto a azul */
-    font-family: 'BriemHand-Medium', BriemHand-Medium;
-    /* Cambia la fuente del texto */
-}
-
-.btn-primary {
-    /*boton ver producto pag home*/
-    color: black;
-    background-color: rgb(121, 174, 187);
-
-}
-
-.card {
-    /*fondo de Encuentra nuestras productos y boton VER PRODUCTOS*/
-    background-color: #cfdedf;
-}
-
-/*HOT SALE*/
-
-.carousel-caption {
-    text-align: right;
-    /* Alinea el texto a la derecha */
-    color: black;
-    margin-top: 60%;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-}
-
-.carousel-caption h3 {
-    
-    font-size: 60px;
-    /* Tamaño de fuente para el título */
-    font-family: Algerian;
-    /* Fuente para el título */
-    color: rgb(34, 35, 36);
-
-}
-
-.carousel-item:first-child .carousel-caption h3 {
-    font-size: 60px;
-    font-family: Algerian;
-    color: rgb(34, 35, 36);
-}
-
-
-
-
-.carousel-item:nth-child(2) .carousel-caption h3 {
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(24, 22, 22);
-}
-
-.carousel-item:nth-child(3) .carousel-caption h3 {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(116, 14, 129);
-}
-
-.carousel-item:nth-child(5) .carousel-caption h3 {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(1, 70, 116);
-}
-
-/* Cambiar el color de las flechas del carousel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1);
-    /*invierte el color, si es claro el fondo oscurece las flechas.*/
-
-}
-
-
-
-/*PRODUCTOS OTOÑO/INVIERNO*/
-.carousel-caption p {
-    font-size: 1.2rem;
-}
-
-.precio {
-    font-weight: bold;
-    /* Hace que el precio sea más visible */
-    color: #d63d3d;
-    /* Cambia el color del texto a rojo */
-    font-size: 24px;
-    /* Tamaño de fuente más grande */
-}
-
-.carousel-item div h3.color-especifico {
-    /*agregue div h3... !important, para que el negro se establezca primero que el lila*/
-    color: black !important;
-}
-
-.Remera-rayada {
-    font-size: 20px !important;
-    font-family: 'Times New Roman', Times, serif !important;
-}
-
-.carousel-item .carousel-caption h3.Remera-estampada {
-    font-size: 20px !important;
-    font-family: 'Times New Roman', Times, serif !important;
-    color: black !important;
-
-}
-
-.carousel-item .carousel-caption h3.Buzo-overside {
-    font-size: 20px !important;
-    font-family: 'Times New Roman', Times, serif !important;
-    color: black !important;
-}
-
-.carousel-item .carousel-caption h3.Conjunto {
-    font-size: 20px !important;
-    font-family: 'Times New Roman', Times, serif !important;
-    color: black !important;
-}
-
-.carousel-item .carousel-caption h3.Pantalon-poplin {
-    font-size: 20px !important;
-    font-family: 'Times New Roman', Times, serif !important;
-    color: black !important;
-}
-
-.carousel-item .carousel-caption h3.Chaleco-puffer {
-    font-size: 20px !important;
-    font-family: 'Times New Roman', Times, serif !important;
-    color: black !important;
-}
-
-.carousel-item .carousel-caption h3.Remera-basica {
-    font-size: 20px !important;
-    font-family: 'Times New Roman', Times, serif !important;
-    color: black !important;
-}
-
-
-
-
-/*estilos contacto*/
-
-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 10px;
-    font-family: Arial, sans-serif;
-}
-
-th,
-td {
-    padding: 10px;
-
-}
-
-th {
-    background-color: #e4add6;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
-h2 {
-    /*Nuestras sucursales*/
-    color: #857c7e;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    margin-bottom: 30px
-}
-
-#contenido-contacto {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
-    /* Hace que el texto sea negrita */
-}
-
-
-
-/* achicar boton enviar*/
-.enviar {
-    width: 20% !important;
-    margin: 5% auto 0;
-    /* 0 centra horizontalmente el botón */
-    text-align: center;
-}
-
-/* Estilos específicos para dispositivos móviles */
-@media (max-width: 768px) {
-    /* Reducir el tamaño del texto en el carrusel */
-    .carousel-caption h3 {
-        font-size: 24px;
+        height: 100vh;
+        width: 100%;
     }
-    /* Reducir el tamaño de las imágenes en el carrusel */
+
+
+      /*HOME*/
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .card-title {              /*Encuentra nuestros productos destacados....*/
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+
+
+    }
+
+    .display-4 {
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    .lead {
+        font-size: 20px;
+    }
+
+    .lead-exploracion {
+        font-size: 25px;
+        color: rgb(219, 69, 144);
+    }
+
+    .centered {
+        text-align: center;
+        margin-top: 20px;
+        /* Ajusta este valor para controlar la distancia desde arriba */
+        color: rgb(106, 90, 205);
+        /* Cambia el color del texto a azul */
+        font-family: 'BriemHand-Medium', BriemHand-Medium;
+        /* Cambia la fuente del texto */
+    }
+
+    .btn-primary {
+        /*boton ver producto pag home*/
+        color: black;
+        background-color: rgb(121, 174, 187);
+
+    }
+
+    .card {
+        /*fondo de Encuentra nuestras productos y boton VER PRODUCTOS*/
+        background-color: #cfdedf;
+    }
+
+    /*CAROUSEL OTOÑO/INVIERNO*/
+
+    .carousel-caption {
+        text-align: right;
+
+        /* Alinea el texto a la derecha */
+        color: black;
+       
+
+    }
+
     .carousel-item img {
         width: 100%;
         height: auto;
     }
+
+    .carousel-caption h3 {
+        /*titulos h3*/
+
+        font-size: 1.0rem;
+        /* Tamaño de fuente para el título */
+        font-family: Algerian;
+        /* Fuente para el título */
+        color: rgb(34, 35, 36);
+
+    }
+
+    .carousel-item:first-child .carousel-caption h3 {
+        /*estilo especifico al titulo del carousel*/
+        font-size: 2.0rem;
+        font-family: Algerian;
+        color: rgb(34, 35, 36);
+    }
+
+
+
+
+    .carousel-item:nth-child(2) .carousel-caption h3 {
+        font-size: 1.0rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(24, 22, 22);
+    }
+
+    .carousel-item:nth-child(3) .carousel-caption h3 {
+        font-size: 1.0rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(116, 14, 129);
+    }
+
+    .carousel-item:nth-child(5) .carousel-caption h3 {
+        font-size: 1.0rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(1, 70, 116);
+    }
+
+    /* Cambiar el color de las flechas del carousel */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1);
+        /*invierte el color, si es claro el fondo oscurece las flechas.*/
+
+    }
+
+
+
+    /*PRODUCTOS OTOÑO/INVIERNO*/
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+
+
+    .carousel-inner {
+        font-size: 1.2rem;
+    }
+
+
+    .precio {
+        font-weight: bold;
+        /* Hace que el precio sea más visible */
+        color: #d63d3d;
+        /* Cambia el color del texto a rojo */
+        font-size: 1.5rem;
+        /* Tamaño de fuente más grande */
+    }
+
+    .buzo-cartera {
+        /*agregue div h3... !important, para que el negro se establezca primero que el lila*/
+
+        font-size: 1.0rem !important;
+        color: black !important;
+
+
+    }
+
+    .Remera-rayada {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+    }
+
+    .Remera-estampada {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+
+    }
+
+    .Buzo-pantalon {
+        font-size: 1.0rem !important;
+
+    }
+
+    .Buzo-overside {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Conjunto {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Pantalon-poplin {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Chaleco-puffer {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Remera-basica {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+
+    }
+   
+
+
+
+
+    /*estilos contacto*/
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px;
+        font-family: Arial, sans-serif;
+    }
+
+    th,
+    td {
+        padding: 10px;
+
+    }
+
+    th {
+        background-color: #e4add6;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    h2 {
+        /*Nuestras sucursales*/
+        color: #857c7e;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    #contenido-contacto {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        /* Hace que el texto sea negrita */
+    }
+
+
+
+    /* achicar boton enviar*/
+    .enviar {
+        width: 20% !important;
+        margin: 5% auto 0;
+        /* 0 centra horizontalmente el botón */
+        text-align: center;
+    }
+
+    }
+
+/* Estilos específicos para pantallas medianas (361px a 768px) */
+@media (min-width: 361px) and (max-width: 768px) {
+
+    body {
+        background-image: url('https://img.freepik.com/vector-gratis/tema-fondo-abstracto-blanco_23-2148830884.jpg?w=2000');
+
+        background-attachment: fixed;
+        background-size: cover;
+
+        height: 100vh;
+        width: 100%;
+    }
+
+
+
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+
+
+    }
+
+    .display-4 {
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    .lead {
+        font-size: 20px;
+    }
+
+    .lead-exploracion {
+        font-size: 25px;
+        color: rgb(219, 69, 144);
+    }
+
+    .centered {
+        text-align: center;
+        margin-top: 20px;
+        /* Ajusta este valor para controlar la distancia desde arriba */
+        color: rgb(106, 90, 205);
+        /* Cambia el color del texto a azul */
+        font-family: 'BriemHand-Medium', BriemHand-Medium;
+        /* Cambia la fuente del texto */
+    }
+
+    .btn-primary {
+        /*boton ver producto pag home*/
+        color: black;
+        background-color: rgb(121, 174, 187);
+
+    }
+
+    .card {
+        /*fondo de Encuentra nuestras productos y boton VER PRODUCTOS*/
+        background-color: #cfdedf;
+    }
+
+    /*CAROUSEL OTOÑO/INVIERNO*/
+
+    .carousel-caption {
+        text-align: right;
+
+        /* Alinea el texto a la derecha */
+        color: black;
+        margin-top: 40%;
+
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-caption h3 {
+        /*titulos h3*/
+
+        font-size: 2.0rem;
+        /* Tamaño de fuente para el título */
+        font-family: Algerian;
+        /* Fuente para el título */
+        color: rgb(34, 35, 36);
+
+    }
+
+    .carousel-item:first-child .carousel-caption h3 {
+        /*estilo especifico al titulo del carousel*/
+        font-size: 2.0rem;
+        font-family: Algerian;
+        color: rgb(34, 35, 36);
+    }
+
+
+
+
+    .carousel-item:nth-child(2) .carousel-caption h3 {
+        font-size: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(24, 22, 22);
+    }
+
+    .carousel-item:nth-child(3) .carousel-caption h3 {
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(116, 14, 129);
+    }
+
+    .carousel-item:nth-child(5) .carousel-caption h3 {
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(1, 70, 116);
+    }
+
+    /* Cambiar el color de las flechas del carousel */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1);
+        /*invierte el color, si es claro el fondo oscurece las flechas.*/
+
+    }
+
+
+
+    /*PRODUCTOS OTOÑO/INVIERNO*/
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+
+
+    .carousel-inner {
+        font-size: 1.2rem;
+    }
+
+
+    .precio {
+        font-weight: bold;
+        /* Hace que el precio sea más visible */
+        color: #d63d3d;
+        /* Cambia el color del texto a rojo */
+        font-size: 1.5rem;
+        /* Tamaño de fuente más grande */
+    }
+
+    .buzo-cartera {
+        /*agregue div h3... !important, para que el negro se establezca primero que el lila*/
+
+        font-size: 1.0rem !important;
+        color: black !important;
+
+
+    }
+
+    .Remera-rayada {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+    }
+
+    .Remera-estampada {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+
+    }
+
+    .Buzo-pantalon {
+        font-size: 1.0rem !important;
+
+    }
+
+    .Buzo-overside {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Conjunto {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Pantalon-poplin {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Chaleco-puffer {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Remera-basica {
+        font-size: 1.0rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+
+    }
+
+
+
+
+    /*estilos contacto*/
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px;
+        font-family: Arial, sans-serif;
+    }
+
+    th,
+    td {
+        padding: 10px;
+
+    }
+
+    th {
+        background-color: #e4add6;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    h2 {
+        /*Nuestras sucursales*/
+        color: #857c7e;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    #contenido-contacto {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        /* Hace que el texto sea negrita */
+    }
+
+
+
+    /* achicar boton enviar*/
+    .enviar {
+        width: 20% !important;
+        margin: 5% auto 0;
+        /* 0 centra horizontalmente el botón */
+        text-align: center;
+    }
+
 }
 
+@media (min-width: 769px){           /*pantallas grandes*/
+    body {
+        background-image: url('https://img.freepik.com/vector-gratis/tema-fondo-abstracto-blanco_23-2148830884.jpg?w=2000');
+
+        background-attachment: fixed;
+        background-size: cover;
+
+        height: 100vh;
+        width: 100%;
+    }
 
 
+
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+
+
+    }
+
+    .display-4 {
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    .lead {
+        font-size: 20px;
+    }
+
+    .lead-exploracion {
+        font-size: 25px;
+        color: rgb(219, 69, 144);
+    }
+
+    .centered {
+        text-align: center;
+        margin-top: 20px;
+        /* Ajusta este valor para controlar la distancia desde arriba */
+        color: rgb(106, 90, 205);
+        /* Cambia el color del texto a azul */
+        font-family: 'BriemHand-Medium', BriemHand-Medium;
+        /* Cambia la fuente del texto */
+    }
+
+    .btn-primary {
+        /*boton ver producto pag home*/
+        color: black;
+        background-color: rgb(121, 174, 187);
+
+    }
+
+    .card {
+        /*fondo de Encuentra nuestras productos y boton VER PRODUCTOS*/
+        background-color: #cfdedf;
+    }
+
+    
+
+    .carousel-caption {                /*CAROUSEL HOT SALE*/
+        text-align: right;
+
+        /* Alinea el texto a la derecha */
+        color: black;
+        margin-top: 40%;
+
+    }
+
+    .carousel-item img {
+        width: 80%;
+        height: auto;
+    }
+
+    .carousel-inner {          /*CAROUSEL OTOÑO/INVIERNO*/
+        width: 70%;
+    }
+
+    
+
+    .carousel-caption h3 {
+        /*titulos h3*/
+
+        font-size: 4.0rem;
+        /* Tamaño de fuente para el título */
+        font-family: Algerian;
+        /* Fuente para el título */
+        color: rgb(34, 35, 36);
+
+    }
+
+    .carousel-item:first-child .carousel-caption h3 {
+        /*estilo especifico al titulo del carousel*/
+        font-size: 2.0rem;
+        font-family: Algerian;
+        color: rgb(34, 35, 36);
+    }
+
+
+
+
+    .carousel-item:nth-child(2) .carousel-caption h3 {
+        font-size: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(24, 22, 22);
+    }
+
+    .carousel-item:nth-child(3) .carousel-caption h3 {
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(116, 14, 129);
+    }
+
+    .carousel-item:nth-child(5) .carousel-caption h3 {
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(1, 70, 116);
+    }
+
+    /* Cambiar el color de las flechas del carousel */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1);
+        /*invierte el color, si es claro el fondo oscurece las flechas.*/
+
+    }
+
+
+
+    /*PRODUCTOS OTOÑO/INVIERNO*/
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+
+
+    .carousel-inner {
+        font-size: 1.2rem;
+    }
+
+
+    .precio {
+        font-weight: bold;
+        /* Hace que el precio sea más visible */
+        color: #d63d3d;
+        /* Cambia el color del texto a rojo */
+        font-size: 1.5rem;
+        /* Tamaño de fuente más grande */
+    }
+
+    .buzo-cartera {
+        /*agregue div h3... !important, para que el negro se establezca primero que el lila*/
+
+        font-size: 1.0rem !important;
+        color: black !important;
+
+
+    }
+
+    .Remera-rayada {
+        font-size: 1.5rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+    }
+
+    .Remera-estampada {
+        font-size: 1.5rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+
+    }
+
+    .Buzo-pantalon {
+        font-size: 1.5rem !important;
+
+    }
+
+    .Buzo-overside {
+        font-size: 1.5rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Conjunto {
+        font-size: 1.5rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Pantalon-poplin {
+        font-size: 1.5rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Chaleco-puffer {
+        font-size: 1.5rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+    }
+
+    .Remera-basica {
+        font-size: 1.5rem !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        color: black !important;
+
+    }
+
+
+
+
+    /*estilos contacto*/
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px;
+        font-family: Arial, sans-serif;
+    }
+
+    th,
+    td {
+        padding: 10px;
+
+    }
+
+    th {
+        background-color: #e4add6;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    h2 {
+        /*Nuestras sucursales*/
+        color: #857c7e;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    #contenido-contacto {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        /* Hace que el texto sea negrita */
+    }
+
+
+
+    /* achicar boton enviar*/
+    .enviar {
+        width: 20% !important;
+        margin: 5% auto 0;
+        /* 0 centra horizontalmente el botón */
+        text-align: center;
+    }
+
+}
 
